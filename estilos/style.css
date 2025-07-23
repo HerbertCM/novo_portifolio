@@ -25,7 +25,7 @@ body{
 /*Menu*/
 
 header{
-    background-color: var(--cor0);
+    background-color: #000d0f;
     color: var(--cor2);
     font-family: 'Titulos';
 }
@@ -41,17 +41,18 @@ div.menu div.logo{
     border-radius: 50%;
     border: 3px solid var(--cor2);
     box-shadow: 0px 0px 10px var(--cor2);
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 3px;
+    transition: box-shadow .6s;
 }
 
 div.logo h1{
-    font-size: 4.5em;
+    font-size: 4em;
     text-shadow: 2px 2px 1px black;
 }
 
@@ -65,9 +66,9 @@ div.menu ul{
 }
 
 div.menu a{
-    font-size: 2em;
+    font-size: 1.7em;
     background-color: #010a0c;
-    margin: 0px 50px;
+    margin: 0px 30px;
     text-align: center;
     border-radius: 10px;
     border: 1px solid var(--cor2);
@@ -90,23 +91,21 @@ section.introducao{
     justify-content: center;
     align-items: center;
     background-color: #010a0c;
+    box-shadow: inset 0px 0px 5px #b37c1582;
     width: 100vw;
-    height: 500px;
+    padding: 100px 0px;
 }
 
 section.introducao div.introducao{
-    width: 50vw;
     height: 50vh;
     border: 2px solid var(--cor2);
     box-shadow: 0px 0px 10px var(--cor2);
     border-radius: 10px;
     display: flex;
+    flex: 0 0 50vw;
     justify-content: space-around;
     align-items: center;
-}
-
-div.introducao div.conteudo{
-    height: 200px;
+    transition: box-shadow .6s;
 }
 
 div.conteudo h1{
@@ -135,14 +134,15 @@ div.introducao img{
 /*Sobre mim*/
 
 section.sobreMim{
+    background-color: var(--cor3);
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid red;
     height: 500px;
 }
 
-section.sobreMim div{
+section.sobreMim div.esquerda{
+    background-color: white;
     overflow: hidden;
     margin: 10px;
     height: 300px;
@@ -159,10 +159,83 @@ section.sobreMim h2{
     text-align: center;
     margin: 0px;
     padding: 2px 0px;
-    background-color: var(--cor0);
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));
+}
+
+section.sobreMim div.direita{
+    overflow: hidden;
+    margin: 10px;
+    height: 300px;
+    flex: 0 1 300px;
+}
+
+section.sobreMim div.direita h2{
+    border-radius: 10px;
 }
 
 section.sobreMim p{
     margin: 10px;
     text-indent: 10px;
+}
+
+/*Indefinido*/
+
+section.indefinido{
+    height: 500px;
+    background-color: #000d0f;
+}
+
+/*Projetos*/
+
+section.projetos{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+section.projetos div.titulo{
+    flex: 0 0 100vw;
+    text-align: center;
+    margin: 80px 0px;
+}
+
+div.titulo h2{
+}
+
+section.projetos div.sites{
+    flex: 0 0 300px;
+    overflow: hidden;
+    margin: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.sites img{
+    border: 1px solid red;
+    width: 100%;
+    height: 150px;
+}
+
+div.sites p{
+    margin: 20px 10px;
+    text-align: center;
+}
+
+div.sites a{
+    text-align: center;
+    text-decoration: none;
+    color: var(--cor2);
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));
+    border-radius: 10px;
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+div.sites a:hover{
+    background-image: linear-gradient(to bottom, #011f26d9, #023a469d);
 }
