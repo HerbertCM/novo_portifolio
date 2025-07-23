@@ -8,10 +8,11 @@
 }
 
 :root{
-    --cor0: #011F26;
-    --cor1: #023a46;
-    --cor2: #b37c15;
-    --cor3: #BFB78F;
+    --cor0: #049DBF;
+    --cor1: #8C4F04;
+    --cor2: #D99036;
+    --cor3: #8C6542;
+    --cor4: #0D0D0D;
 }
 
 body{
@@ -20,6 +21,7 @@ body{
     box-sizing: border-box;
     font-family: 'Inria Serif';
     overflow-x: hidden;
+    background-color: var(--cor4);
 }
 
 /*Menu*/
@@ -134,7 +136,6 @@ div.introducao img{
 /*Sobre mim*/
 
 section.sobreMim{
-    background-color: var(--cor3);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -142,7 +143,7 @@ section.sobreMim{
 }
 
 section.sobreMim div.esquerda{
-    background-color: white;
+    background-color: var(--cor2);
     overflow: hidden;
     margin: 10px;
     height: 300px;
@@ -152,14 +153,14 @@ section.sobreMim div.esquerda{
 }
 
 section.sobreMim h2{
-    color: var(--cor2);
+    color: var(--cor1);
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.521);
     font-family: 'Titulos';
     font-size: 3em;
     text-align: center;
     margin: 0px;
     padding: 2px 0px;
-    background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));
+    background-image: linear-gradient(to bottom, #010a0c, #010a0ce8);
 }
 
 section.sobreMim div.direita{
@@ -176,13 +177,13 @@ section.sobreMim div.direita h2{
 section.sobreMim p{
     margin: 10px;
     text-indent: 10px;
+    text-align: center;
 }
 
 /*Indefinido*/
 
 section.indefinido{
     height: 500px;
-    background-color: #000d0f;
 }
 
 /*Projetos*/
@@ -191,22 +192,34 @@ section.projetos{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    margin-bottom: 100px;
 }
 
 section.projetos div.titulo{
     flex: 0 0 100vw;
     text-align: center;
     margin: 80px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 div.titulo h2{
+    font-family: "Titulos";
+    color: var(--cor1);
+    font-size: 3.8em;
+    background-image: linear-gradient(to bottom, #010a0c, #010a0ce8);
+    text-shadow: 1px 1px 2px black;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.508);
+    flex:  0 0 300px;
+    border-radius: 10px;
 }
 
 section.projetos div.sites{
     flex: 0 0 300px;
     overflow: hidden;
     margin: 10px;
-    background-color: white;
+    background-color: var(--cor2);
     box-shadow: 0px 0px 5px black;
     border-radius: 10px;
     display: flex;
@@ -230,12 +243,67 @@ div.sites a{
     text-align: center;
     text-decoration: none;
     color: var(--cor2);
-    background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));
+    background-image: linear-gradient(to bottom, #010a0c, #010a0ce8);
     border-radius: 10px;
     width: 150px;
     margin-bottom: 10px;
 }
 
 div.sites a:hover{
-    background-image: linear-gradient(to bottom, #011f26d9, #023a469d);
+    background-image: linear-gradient(to bottom, #010a0ce8, #010a0cd0);
+}
+
+/*Redes Sociais*/
+
+section.redesSociais{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 100px 0px;
+}
+
+section.redesSociais div{
+    color: white;
+    margin: 10px;
+    flex: 0 0 300px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+div.instagram h3, div.wpp h3{
+    text-align: center;
+    font-family: 'Titulos';
+    font-size: 3em;
+    margin: 0px;
+    color: var(--cor1);
+    text-shadow: 1px 1px 2px black;
+}
+
+div.instagram p, div.wpp p{
+    text-align: center;
+    margin: 10px;
+}
+
+div.instagram a, div.wpp a{
+    text-align: center;
+    flex: 0 0;
+    width: 150px;
+    height: 30px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    text-decoration: none;
+    color: black;
+
+    border-radius: 10px;
+    background-image: linear-gradient(to right, var(--cor2), var(--cor1), var(--cor1), var(--cor1));
+}
+
+div.instagram img, div.wpp img{
+    margin-left: 10px;
+    height: 30px;
+    width: 30px;
 }
