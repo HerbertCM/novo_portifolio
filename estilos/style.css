@@ -143,13 +143,14 @@ section.sobreMim{
 }
 
 section.sobreMim div.esquerda{
-    background-color: var(--cor2);
+    background-color: var(--cor3);
     overflow: hidden;
     margin: 10px;
-    height: 300px;
     flex: 0 1 450px;
     box-shadow: 0px 0px 5px black;
     border-radius: 10px;
+    border: 1px solid var(--cor1);
+    box-shadow: 0px 0px 5px #d99036b3;
 }
 
 section.sobreMim h2{
@@ -166,8 +167,25 @@ section.sobreMim h2{
 section.sobreMim div.direita{
     overflow: hidden;
     margin: 10px;
-    height: 300px;
     flex: 0 1 300px;
+    border: 1px solid var(--cor1);
+    border-radius: 10px;
+    background-color: var(--cor3);
+    box-shadow: 0px 0px 5px #d99036b3;
+}
+
+div.direita ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 10px;
+}
+
+div.direita li{
+    margin-bottom: 5px;
+}
+
+div.direita li::before{
+    content: "✔️";
 }
 
 section.sobreMim div.direita h2{
@@ -175,7 +193,7 @@ section.sobreMim div.direita h2{
 }
 
 section.sobreMim p{
-    margin: 10px;
+    margin: 20px;
     text-indent: 10px;
     text-align: center;
 }
@@ -219,8 +237,9 @@ section.projetos div.sites{
     flex: 0 0 300px;
     overflow: hidden;
     margin: 10px;
-    background-color: var(--cor2);
-    box-shadow: 0px 0px 5px black;
+    background-color: var(--cor3);
+    border: 1px solid var(--cor1);
+    box-shadow: 0px 0px 5px #d99036b3;
     border-radius: 10px;
     display: flex;
     flex-flow: column nowrap;
@@ -229,9 +248,9 @@ section.projetos div.sites{
 }
 
 div.sites img{
-    border: 1px solid red;
     width: 100%;
     height: 150px;
+    border-bottom: 1px solid var(--cor1);
 }
 
 div.sites p{
@@ -289,7 +308,7 @@ div.instagram a, div.wpp a{
     text-align: center;
     flex: 0 0;
     width: 150px;
-    height: 30px;
+    height: 32px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -302,8 +321,12 @@ div.instagram a, div.wpp a{
     background-image: linear-gradient(to right, var(--cor2), var(--cor1), var(--cor1), var(--cor1));
 }
 
+section.redesSociais a:hover{
+    background-image: linear-gradient(to right, #d99036b9, #8c4f04c3, #8c4f04c3, #8c4f04c3);
+}
+
 div.instagram img, div.wpp img{
-    margin-left: 10px;
+    margin: 5px;
     height: 30px;
     width: 30px;
 }
