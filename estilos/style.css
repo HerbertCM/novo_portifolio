@@ -50,12 +50,13 @@ div.menu div.logo{
     justify-content: center;
     align-items: center;
     margin: 3px;
-    transition: box-shadow .6s;
+    transition: box-shadow .6s, width .6s, height .6s;
 }
 
 div.logo h1{
     font-size: 4em;
     text-shadow: 2px 2px 1px black;
+    transition: font-size .6s;
 }
 
 div.menu ul{
@@ -77,11 +78,11 @@ div.menu a{
     flex: 1 1;
     text-decoration: none;
     color: var(--cor2);
+    transition: margin 0.6s;
 }
 
 div.menu a:hover{
     background-color: #042229;
-    cursor: pointer;
     transition: background-color .6s;
 }
 
@@ -104,10 +105,10 @@ section.introducao div.introducao{
     box-shadow: 0px 0px 10px var(--cor2);
     border-radius: 10px;
     display: flex;
-    flex: 0 0 50vw;
+    flex: 0 0 60vw;
     justify-content: space-around;
     align-items: center;
-    transition: box-shadow .6s;
+    transition: box-shadow .6s, flex .6s, height .6s;
 }
 
 div.conteudo h1{
@@ -118,6 +119,7 @@ div.conteudo h1{
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.588);
     margin: 0px;
     margin-top: 10px;
+    transition: width .6s, font-size .6s;
 }
 
 div.conteudo p{
@@ -125,12 +127,14 @@ div.conteudo p{
     text-align: right;
     margin: 0px;
     transform: translateY(-15px);
+    transition: font-size .6s;
 }
 
 div.introducao img{
     border: 1px solid red;
     width: 200px;
     height: 200px;
+    transition: width .6s, height .6s;
 }
 
 /*Sobre mim*/
@@ -231,6 +235,7 @@ div.titulo h2{
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.508);
     flex:  0 0 300px;
     border-radius: 10px;
+    transition: flex .6s, font-size .6s;
 }
 
 section.projetos div.sites{
@@ -245,6 +250,7 @@ section.projetos div.sites{
     flex-flow: column nowrap;
     justify-content: space-between;
     align-items: center;
+    transition: flex .6s;
 }
 
 div.sites img{
@@ -297,11 +303,13 @@ div.instagram h3, div.wpp h3{
     margin: 0px;
     color: var(--cor1);
     text-shadow: 1px 1px 2px black;
+    transition: font-size .6s;
 }
 
 div.instagram p, div.wpp p{
     text-align: center;
     margin: 10px;
+    transition: font-size .6s;
 }
 
 div.instagram a, div.wpp a{
@@ -319,6 +327,7 @@ div.instagram a, div.wpp a{
 
     border-radius: 10px;
     background-image: linear-gradient(to right, var(--cor2), var(--cor1), var(--cor1), var(--cor1));
+    transition: width .6s, heigth .6s;
 }
 
 section.redesSociais a:hover{
@@ -329,4 +338,5 @@ div.instagram img, div.wpp img{
     margin: 5px;
     height: 30px;
     width: 30px;
+    transition: width .6s, heigth .6s;
 }

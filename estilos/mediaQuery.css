@@ -1,0 +1,101 @@
+@media screen and (max-width: 992px){
+    /*Menu*/
+    div.menu div.logo{
+    width: 60px;
+    height: 60px;
+    transition: width .6s, height .6s;
+    }
+
+    div.logo h1{
+        font-size: 2.5em;
+        transition: font-size .6s;
+    }
+
+    div.menu a{
+        font-size: 1.5em;
+        margin: 0px 20px;
+        transition: margin 0.6s;
+    }
+
+    /*Corpo Introdução*/
+
+    section.introducao div.introducao{
+        flex: 0 0 80vw;
+        transition: flex .6s;
+        height: 35vh;
+        transition: height .6s;
+    }
+
+    div.conteudo h1{
+        font-size: 3em;
+        width: 200px;
+        transition: width .6s, font-size .6s;
+    }
+
+    div.conteudo p{
+        font-size: .9em;
+        transform: translateY(-14px);
+        transition: font-size .6s;
+    }
+
+    div.introducao img{
+        width: 150px;
+        height: 150px;
+        transition: width .6s, height .6s;
+    }
+
+    /*Sobre Mim*/
+
+    section.sobreMim h2{
+        font-size: 2.5em;
+    }
+
+    section.sobreMim p{
+        font-size: .9em;
+    }
+
+    div.direita li{
+        font-size: .9em;
+    }
+
+    /*Projetos*/
+
+    div.titulo h2{
+        font-size: 3em;
+        flex:  0 0 250px;
+        transition: flex .6s, font-size .6s;
+    }
+
+    section.projetos div.sites{
+        flex: 0 0 270px;
+        transition: flex .6s;
+    }
+
+    div.sites p{
+        font-size: .8em;
+    }
+
+    /*Redes Sociais*/
+
+    div.instagram h3, div.wpp h3{
+        font-size: 2.5em;
+        transition: font-size .6s;
+    }
+
+    div.instagram p, div.wpp p{
+        font-size: .8em;
+        transition: font-size .6s;
+    }
+
+    div.instagram a, div.wpp a{
+        width: 140px;
+        height: 30px;
+        transition: width .6s, heigth .6s;
+    }
+
+    div.instagram img, div.wpp img{
+        height: 25px;
+        width: 25px;
+        transition: width .6s, heigth .6s;
+    }
+}
