@@ -53,19 +53,14 @@ div.menu div.logo{
     transition: box-shadow .6s, width .6s, height .6s;
 }
 
+div.span div.logo{
+    display: none;
+}
+
 div.logo h1{
     font-size: 4em;
     text-shadow: 2px 2px 1px black;
     transition: font-size .6s;
-}
-
-div.menu ul{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-    flex: 1 1;
-    list-style-type: none;
 }
 
 div.menu a{

@@ -1,5 +1,7 @@
 @media screen and (max-width: 992px){
+
     /*Menu*/
+
     div.menu div.logo{
     width: 60px;
     height: 60px;
@@ -97,5 +99,87 @@
         height: 25px;
         width: 25px;
         transition: width .6s, heigth .6s;
+    }
+}
+
+@media screen and (max-width: 768px){
+    
+    /*Menu*/
+
+    nav#navegacao div.logo{
+        display: none;
+    }
+
+    div.span{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px;
+        cursor: pointer;
+        
+    }
+
+    div.span div.logo{
+        display: flex;
+        justify-items: center;
+    }
+
+    div.menu nav{
+        display: none;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.menu a{
+        font-size: 1.6em;
+        margin: 0px;
+        padding: 5px 0px;
+        border-radius: 0px;
+        width: 97vw;
+    }
+
+    /*Redes Sociais*/
+
+    section.redesSociais div{
+        margin: 10px;
+        flex: 0 0 200px;
+    }
+}
+
+@media screen and (max-width: 550px){
+
+    /*Corpo Introdução*/
+
+    section.introducao div.introducao{
+        flex: 0 0 90vw;
+        height: 40vh;
+    }
+
+    div.conteudo h1{
+        font-size: 2.5em;
+        width: 150px;
+    }
+
+    div.conteudo p{
+        font-size: .8em;
+        transform: translateY(-10px);
+    }
+
+    div.introducao img{
+        width: 100px;
+        height: 100px;
+    }
+
+    /*Sobre Mim*/
+
+    section.sobreMim{
+        height: 800px;
+    }
+
+    section.sobreMim div.esquerda{
+        margin: 80px 20px;
+        width: 300px;
+        flex: 1 0 auto;
     }
 }
