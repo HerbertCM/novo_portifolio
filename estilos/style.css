@@ -15,6 +15,10 @@
     --cor4: #0D0D0D;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0px;
     padding: 0px;
@@ -27,9 +31,21 @@ body{
 /*Menu*/
 
 header{
-    background-color: #000d0f;
+    background-color: #000d0f95;
     color: var(--cor2);
     font-family: 'Titulos';
+    border-bottom: 1px solid var(--cor2);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+
+}
+
+div.span {
+    display: none;
 }
 
 div.menu nav{
@@ -126,7 +142,9 @@ div.conteudo p{
 }
 
 div.introducao img{
-    border: 1px solid red;
+    border: 2px solid var(--cor2);
+    border-radius: 5px 10px 20px 10px;
+    box-shadow: 0px 0px 5px var(--cor2);
     width: 200px;
     height: 200px;
     transition: width .6s, height .6s;

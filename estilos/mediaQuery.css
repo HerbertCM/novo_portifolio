@@ -175,11 +175,30 @@
 
     section.sobreMim{
         height: 800px;
+        flex-flow: column nowrap;
     }
 
     section.sobreMim div.esquerda{
         margin: 80px 20px;
         width: 300px;
         flex: 1 0 auto;
+    }
+
+    /*Redes Sociais*/
+
+    section.redesSociais div{
+        flex: 0 0 100px;
+        margin: 5px;
+    }
+    div.instagram h3, div.wpp h3{
+        font-size: 2.2em;
+    }
+
+    div.instagram p, div.wpp p{
+        font-size: .7em;
+    }
+
+    div.instagram a, div.wpp a{
+        width: 130px;
     }
 }
